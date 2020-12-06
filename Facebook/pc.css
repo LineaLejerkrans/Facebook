@@ -1,0 +1,475 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Fjalla One', sans-serif;
+}
+
+body {
+  background-color: gray;
+}
+
+#start {
+  text-align: center;
+  background-color: darkgray;
+}
+
+#name {
+  font-size: 50px;
+  font-family: 'Anton', sans-serif;
+}
+
+#quote {
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-family: 'Anton', sans-serif;
+}
+#navbar {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+#navbar > p {
+  border-radius: 20px; /*rundar kanterna*/
+  font-family: arial, cursive;
+  font-size: 15px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.like > a {
+  color: black;
+  text-decoration: none;
+  padding: 10px;
+}
+
+#profile1 {
+  position: relative;
+}
+
+.background-picture {
+  max-width: 100%;
+}
+
+.profile-picture {
+  left: 40%;
+  top: 46%;
+  width: 20%;
+  position: absolute;
+  border-radius: 50%;
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+}
+
+#rad1 {
+  width: 400px;
+  border-radius: 40px;
+  margin: 40px;
+}
+
+#rad2 {
+  width: 500px;
+  border-radius: 40px;
+  margin: 40px;
+}
+
+#introduktion {
+  background-color: darkgray;
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+
+.info {
+  background-color: lightgray;
+  padding: 10px;
+  border-radius: 20px;
+  text-align: center;
+  margin: 15px;
+}
+
+#foton {
+  background-color: darkgray;
+  border-radius: 20px;
+  padding: 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-around;
+}
+
+#foton > div {
+  margin: 10px;
+}
+
+.foto {
+  width: 120px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+#friends {
+  background-color: darkgray;
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 40px;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-around;
+}
+
+#friends > div {
+  margin: 10px;
+}
+
+.profile {
+  width: 100px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.name {
+  text-align: center;
+}
+
+.inlägg {
+  background-color: darkgray;
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.description {
+  margin: 10px;
+}
+
+.like {
+  display: flex;
+  justify-content: space-around;
+}
+
+.like > p {
+  margin: 10px;
+}
+
+.image {
+  width: 400px;
+}
+
+.comment {
+  background-color: lightgray;
+  padding: 10px;
+  border-radius: 40px;
+  margin: 15px;
+  text-align: left;
+  width: 430px;
+}
+
+#end {
+  background-color: darkgray;
+  height: 100px;
+}
+
+#end > p {
+  text-align: right;
+  padding: 10px;
+}
+
+
+
+@media screen and (min-width: 1200px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fjalla One', sans-serif;
+  }
+
+  body {
+    background-color: gray;
+  }
+
+  #start {
+    text-align: center;
+    background-color: darkgray;
+  }
+
+  #name {
+    font-size: 50px;
+    font-family: 'Anton', sans-serif;
+  }
+
+  #quote {
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-family: 'Anton', sans-serif;
+  }
+
+  .background-picture {
+    max-width: 100%;
+  }
+
+  #container {
+    display: flex;
+    justify-content: center;
+  }
+
+  #rad1 {
+    width: 400px;
+    border-radius: 40px;
+    margin: 40px;
+  }
+
+  #rad2 {
+    width: 500px;
+    border-radius: 40px;
+    margin: 40px;
+  }
+
+  #introduktion {
+    background-color: darkgray;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 40px;
+  }
+
+  .info {
+    background-color: lightgray;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+    margin: 15px;
+  }
+
+  #foton {
+    background-color: darkgray;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-around;
+  }
+
+  #foton > div {
+    margin: 10px;
+  }
+
+  .foto {
+    width: 120px;
+    margin: 10px;
+    border-radius: 10px;
+  }
+
+  #friends {
+    background-color: darkgray;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-around;
+  }
+
+  #friends > div {
+    margin: 10px;
+  }
+
+  .profile {
+    width: 100px;
+    margin: 10px;
+    border-radius: 10px;
+  }
+
+  .name {
+    text-align: center;
+  }
+
+  .inlägg {
+    background-color: darkgray;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .description {
+    margin: 10px;
+  }
+
+  .like {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .like > p {
+    margin: 10px;
+  }
+
+  .image {
+    width: 400px;
+  }
+
+  .comment {
+    background-color: lightgray;
+    padding: 10px;
+    border-radius: 40px;
+    margin: 15px;
+    text-align: left;
+    width: 430px;
+  }
+
+  #end {
+    background-color: darkgray;
+    height: 100px;
+  }
+
+
+}
+
+@media screen and (max-width: 1000px) {
+  #introduktion {
+    display: block;
+  }
+
+  #foton {
+    display: block;
+  }
+
+  #friends {
+    display: block;
+  }
+
+  @media screen and (max-width: 800px) {
+    #container {
+      height: 100%;
+      display: grid;
+      grid-template-columns: auto;
+      justify-content: center;
+    }
+
+    #rad1 {
+      width: 400px;
+      border-radius: 40px;
+      margin: 40px;
+    }
+
+    #rad2 {
+      width: 400px;
+      border-radius: 40px;
+      margin: 40px;
+    }
+
+    .comment {
+      background-color: lightgray;
+      padding: 10px;
+      border-radius: 40px;
+      margin: 15px;
+      text-align: left;
+      width: 330px;
+    }
+
+    #foton {
+      background-color: darkgray;
+      border-radius: 20px;
+      padding: 20px;
+      margin-top: 40px;
+      margin-bottom: 40px;
+      display: grid;
+      grid-template-columns: auto auto;
+      justify-content: space-around;
+    }
+
+    #foton > div {
+      margin: 0px;
+    }
+
+    #friends {
+      background-color: darkgray;
+      border-radius: 20px;
+      padding: 20px;
+      margin-bottom: 40px;
+      display: grid;
+      grid-template-columns: auto auto;
+      justify-content: space-around;
+    }
+
+    #friends > div {
+      margin: 0px;
+    }
+  }
+
+    @media screen and (max-width: 600px) {
+      #name {
+        font-size: 35px;
+        font-family: 'Anton', sans-serif;
+      }
+
+      #quote {
+        font-size: 15px;
+        margin-bottom: 20px;
+        font-family: 'Anton', sans-serif;
+      }
+
+      #container {
+        height: 100%;
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+      }
+
+      #rad1 {
+        width: 300px;
+        border-radius: 40px;
+        margin: 40px;
+      }
+
+      #rad2 {
+        width: 300px;
+        border-radius: 40px;
+        margin: 40px;
+      }
+
+      .info {
+        background-color: lightgray;
+        padding: 10px;
+        border-radius: 20px;
+        text-align: center;
+        margin: 15px;
+        font-size: 15px;
+      }
+
+      .profile {
+        width: 80px;
+        margin: 10px;
+        border-radius: 10px;
+      }
+
+      .image {
+        width: 200px;
+      }
+
+      .comment {
+        background-color: lightgray;
+        padding: 10px;
+        border-radius: 40px;
+        margin: 15px;
+        text-align: left;
+        width: 230px;
+      }
+
+      #end {
+        background-color: darkgray;
+        height: 80px;
+      }
+    }
