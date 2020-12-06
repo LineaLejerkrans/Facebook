@@ -24,6 +24,7 @@ body {
   margin-bottom: 20px;
   font-family: 'Anton', sans-serif;
 }
+
 #navbar {
   display: flex;
   justify-content: space-around;
@@ -333,11 +334,21 @@ a {
     background-color: darkgray;
     height: 100px;
   }
-
-
 }
 
+
 @media screen and (max-width: 1000px) {
+  #name {
+  font-size: 40px;
+  font-family: 'Anton', sans-serif;
+}
+
+  #quote {
+  font-size: 15px;
+  margin-bottom: 20px;
+  font-family: 'Anton', sans-serif;
+}
+    
   #introduktion {
     display: block;
   }
