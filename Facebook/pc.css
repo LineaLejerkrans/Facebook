@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: border-box; /* includes the padding and border in an element's total width and height */
   font-family: 'Fjalla One', sans-serif;
 }
 
@@ -9,7 +9,7 @@ body {
   background-color: gray;
 }
 
-#start {
+#start { /* the header which includes the profile picture, name and navbar */
   text-align: center;
   background-color: darkgray;
 }
@@ -32,14 +32,14 @@ body {
 }
 
 #navbar > p {
-  border-radius: 20px; /*rundar kanterna*/
+  border-radius: 20px; 
   font-family: arial, cursive;
   font-size: 15px;
 }
 
-a {
+a { /* links */
   color: black;
-  text-decoration: none;
+  text-decoration: none; /* takes away the underline of a link */
 }
 
 .like > a {
@@ -48,7 +48,7 @@ a {
   padding: 10px;
 }
 
-#profile1 {
+#profile1 { /* the div around the profile picture and the background */ 
   position: relative;
 }
 
@@ -60,12 +60,12 @@ a {
   left: 40%;
   top: 46%;
   width: 20%;
-  position: absolute;
+  position: absolute; /* so I can put the profile picture ontop of the backgrounds picture */
   border-radius: 50%;
 }
 
-#container {
-  display: flex;
+#container { /* contains the two colomns that I have */
+  display: flex; /* I wanted the columns next to each other */
   justify-content: center;
 }
 
@@ -81,7 +81,7 @@ a {
   margin: 40px;
 }
 
-#introduktion {
+#introduktion { /* the first box in "rad1" */
   background-color: darkgray;
   border-radius: 20px;
   padding: 20px;
@@ -96,14 +96,14 @@ a {
   margin: 15px;
 }
 
-#foton {
+#foton { /* the second box in "rad 1" */
   background-color: darkgray;
   border-radius: 20px;
   padding: 20px;
   margin-top: 40px;
   margin-bottom: 40px;
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto auto; /* I wanted two picturs per row */
   justify-content: space-around;
 }
 
@@ -117,7 +117,7 @@ a {
   border-radius: 10px;
 }
 
-#friends {
+#friends { /* the third box in "rad1" */
   background-color: darkgray;
   border-radius: 20px;
   padding: 20px;
@@ -131,17 +131,17 @@ a {
   margin: 10px;
 }
 
-.profile {
+.profile { /* profile pictures for the friends */
   width: 100px;
   margin: 10px;
   border-radius: 10px;
 }
 
-.name {
+.name { /* names of the friends */
   text-align: center;
 }
 
-.inlägg {
+.inlägg { /* the posts in the second column */
   background-color: darkgray;
   border-radius: 20px;
   padding: 20px;
@@ -175,7 +175,7 @@ a {
   width: 430px;
 }
 
-#end {
+#end { /* the footer */
   background-color: darkgray;
   height: 100px;
 }
@@ -187,7 +187,7 @@ a {
 
 
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) { /* if the screen is bigger than 1200px it will use the css below */
   * {
     margin: 0;
     padding: 0;
@@ -337,7 +337,7 @@ a {
 }
 
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1000px) { /* if the screen becomes smaller than 1000px it will change what is written below */
   #name {
   font-size: 40px;
   font-family: 'Anton', sans-serif;
@@ -350,7 +350,7 @@ a {
 }
     
   #introduktion {
-    display: block;
+    display: block; /* makes the element take up the whole width */
   }
 
   #foton {
@@ -361,12 +361,14 @@ a {
     display: block;
   }
 
-  @media screen and (max-width: 800px) {
+}
+
+  @media screen and (max-width: 800px) { /* if the screen is smaller than 800px it will change what is written below */
     #container {
       height: 100%;
       display: grid;
-      grid-template-columns: auto;
-      justify-content: center;
+      grid-template-columns: auto; /* I want the two columns that I had before to now become one column */
+      justify-content: center; /* and I want it in the middle of the page */
     }
 
     #rad1 {
@@ -420,7 +422,7 @@ a {
     }
   }
 
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 600px) { /* if the screen is smaller than 600px it will change these things below */
       #name {
         font-size: 35px;
         font-family: 'Anton', sans-serif;
@@ -484,3 +486,4 @@ a {
         height: 80px;
       }
     }
+  
