@@ -1,0 +1,489 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* includes the padding and border in an element's total width and height */
+  font-family: 'Fjalla One', sans-serif;
+}
+
+body {
+  background-color: gray;
+}
+
+#start { /* the header which includes the profile picture, name and navbar */
+  text-align: center;
+  background-color: darkgray;
+}
+
+#name {
+  font-size: 50px;
+  font-family: 'Anton', sans-serif;
+}
+
+#quote {
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-family: 'Anton', sans-serif;
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+#navbar > p {
+  border-radius: 20px; 
+  font-family: arial, cursive;
+  font-size: 15px;
+}
+
+a { /* links */
+  color: black;
+  text-decoration: none; /* takes away the underline of a link */
+}
+
+.like > a {
+  color: black;
+  text-decoration: none;
+  padding: 10px;
+}
+
+#profile1 { /* the div around the profile picture and the background */ 
+  position: relative;
+}
+
+.background-picture {
+  max-width: 100%;
+}
+
+.profile-picture {
+  left: 40%;
+  top: 46%;
+  width: 20%;
+  position: absolute; /* so I can put the profile picture ontop of the backgrounds picture */
+  border-radius: 50%;
+}
+
+#container { /* contains the two colomns that I have */
+  display: flex; /* I wanted the columns next to each other */
+  justify-content: center;
+}
+
+#rad1 {
+  width: 400px;
+  border-radius: 40px;
+  margin: 40px;
+}
+
+#rad2 {
+  width: 500px;
+  border-radius: 40px;
+  margin: 40px;
+}
+
+#introduktion { /* the first box in "rad1" */
+  background-color: darkgray;
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+
+.info {
+  background-color: lightgray;
+  padding: 10px;
+  border-radius: 20px;
+  text-align: center;
+  margin: 15px;
+}
+
+#foton { /* the second box in "rad 1" */
+  background-color: darkgray;
+  border-radius: 20px;
+  padding: 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  display: grid;
+  grid-template-columns: auto auto; /* I wanted two picturs per row */
+  justify-content: space-around;
+}
+
+#foton > div {
+  margin: 10px;
+}
+
+.foto {
+  width: 120px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+#friends { /* the third box in "rad1" */
+  background-color: darkgray;
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 40px;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-around;
+}
+
+#friends > div {
+  margin: 10px;
+}
+
+.profile { /* profile pictures for the friends */
+  width: 100px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.name { /* names of the friends */
+  text-align: center;
+}
+
+.inlägg { /* the posts in the second column */
+  background-color: darkgray;
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.description {
+  margin: 10px;
+}
+
+.like {
+  display: flex;
+  justify-content: space-around;
+}
+
+.like > p {
+  margin: 10px;
+}
+
+.image {
+  width: 400px;
+}
+
+.comment {
+  background-color: lightgray;
+  padding: 10px;
+  border-radius: 40px;
+  margin: 15px;
+  text-align: left;
+  width: 430px;
+}
+
+#end { /* the footer */
+  background-color: darkgray;
+  height: 100px;
+}
+
+#end > p {
+  text-align: right;
+  padding: 10px;
+}
+
+
+
+@media screen and (min-width: 1200px) { /* if the screen is bigger than 1200px it will use the css below */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fjalla One', sans-serif;
+  }
+
+  body {
+    background-color: gray;
+  }
+
+  #start {
+    text-align: center;
+    background-color: darkgray;
+  }
+
+  #name {
+    font-size: 50px;
+    font-family: 'Anton', sans-serif;
+  }
+
+  #quote {
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-family: 'Anton', sans-serif;
+  }
+
+  .background-picture {
+    max-width: 100%;
+  }
+
+  #container {
+    display: flex;
+    justify-content: center;
+  }
+
+  #rad1 {
+    width: 400px;
+    border-radius: 40px;
+    margin: 40px;
+  }
+
+  #rad2 {
+    width: 500px;
+    border-radius: 40px;
+    margin: 40px;
+  }
+
+  #introduktion {
+    background-color: darkgray;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 40px;
+  }
+
+  .info {
+    background-color: lightgray;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+    margin: 15px;
+  }
+
+  #foton {
+    background-color: darkgray;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-around;
+  }
+
+  #foton > div {
+    margin: 10px;
+  }
+
+  .foto {
+    width: 120px;
+    margin: 10px;
+    border-radius: 10px;
+  }
+
+  #friends {
+    background-color: darkgray;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-around;
+  }
+
+  #friends > div {
+    margin: 10px;
+  }
+
+  .profile {
+    width: 100px;
+    margin: 10px;
+    border-radius: 10px;
+  }
+
+  .name {
+    text-align: center;
+  }
+
+  .inlägg {
+    background-color: darkgray;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .description {
+    margin: 10px;
+  }
+
+  .like {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .like > p {
+    margin: 10px;
+  }
+
+  .image {
+    width: 400px;
+  }
+
+  .comment {
+    background-color: lightgray;
+    padding: 10px;
+    border-radius: 40px;
+    margin: 15px;
+    text-align: left;
+    width: 430px;
+  }
+
+  #end {
+    background-color: darkgray;
+    height: 100px;
+  }
+}
+
+
+@media screen and (max-width: 1000px) { /* if the screen becomes smaller than 1000px it will change what is written below */
+  #name {
+  font-size: 40px;
+  font-family: 'Anton', sans-serif;
+}
+
+  #quote {
+  font-size: 15px;
+  margin-bottom: 20px;
+  font-family: 'Anton', sans-serif;
+}
+    
+  #introduktion {
+    display: block; /* makes the element take up the whole width */
+  }
+
+  #foton {
+    display: block;
+  }
+
+  #friends {
+    display: block;
+  }
+
+}
+
+  @media screen and (max-width: 800px) { /* if the screen is smaller than 800px it will change what is written below */
+    #container {
+      height: 100%;
+      display: grid;
+      grid-template-columns: auto; /* I want the two columns that I had before to now become one column */
+      justify-content: center; /* and I want it in the middle of the page */
+    }
+
+    #rad1 {
+      width: 400px;
+      border-radius: 40px;
+      margin: 40px;
+    }
+
+    #rad2 {
+      width: 400px;
+      border-radius: 40px;
+      margin: 40px;
+    }
+
+    .comment {
+      background-color: lightgray;
+      padding: 10px;
+      border-radius: 40px;
+      margin: 15px;
+      text-align: left;
+      width: 330px;
+    }
+
+    #foton {
+      background-color: darkgray;
+      border-radius: 20px;
+      padding: 20px;
+      margin-top: 40px;
+      margin-bottom: 40px;
+      display: grid;
+      grid-template-columns: auto auto;
+      justify-content: space-around;
+    }
+
+    #foton > div {
+      margin: 0px;
+    }
+
+    #friends {
+      background-color: darkgray;
+      border-radius: 20px;
+      padding: 20px;
+      margin-bottom: 40px;
+      display: grid;
+      grid-template-columns: auto auto;
+      justify-content: space-around;
+    }
+
+    #friends > div {
+      margin: 0px;
+    }
+  }
+
+    @media screen and (max-width: 600px) { /* if the screen is smaller than 600px it will change these things below */
+      #name {
+        font-size: 35px;
+        font-family: 'Anton', sans-serif;
+      }
+
+      #quote {
+        font-size: 15px;
+        margin-bottom: 20px;
+        font-family: 'Anton', sans-serif;
+      }
+
+      #container {
+        height: 100%;
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+      }
+
+      #rad1 {
+        width: 300px;
+        border-radius: 40px;
+        margin: 40px;
+      }
+
+      #rad2 {
+        width: 300px;
+        border-radius: 40px;
+        margin: 40px;
+      }
+
+      .info {
+        background-color: lightgray;
+        padding: 10px;
+        border-radius: 20px;
+        text-align: center;
+        margin: 15px;
+        font-size: 15px;
+      }
+
+      .profile {
+        width: 80px;
+        margin: 10px;
+        border-radius: 10px;
+      }
+
+      .image {
+        width: 200px;
+      }
+
+      .comment {
+        background-color: lightgray;
+        padding: 10px;
+        border-radius: 40px;
+        margin: 15px;
+        text-align: left;
+        width: 230px;
+      }
+
+      #end {
+        background-color: darkgray;
+        height: 80px;
+      }
+    }
+  
