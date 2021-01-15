@@ -17,6 +17,7 @@ body {
 #name {
   font-size: 50px;
   font-family: 'Anton', sans-serif;
+  margin-top: 8px;
 }
 
 #quote {
@@ -62,6 +63,7 @@ a { /* links */
   width: 20%;
   position: absolute; /* so I can put the profile picture ontop of the backgrounds picture */
   border-radius: 50%;
+  border: 5px solid;
 }
 
 #container { /* contains the two colomns that I have */
@@ -364,6 +366,15 @@ a { /* links */
 }
 
   @media screen and (max-width: 800px) { /* if the screen is smaller than 800px it will change what is written below */
+    .profile-picture {
+      left: 40%;
+      top: 46%;
+      width: 20%;
+      position: absolute; 
+      border-radius: 50%;
+      border: 4px solid;
+    }
+
     #container {
       height: 100%;
       display: grid;
@@ -434,6 +445,15 @@ a { /* links */
         font-family: 'Anton', sans-serif;
       }
 
+      .profile-picture {
+        left: 40%;
+        top: 46%;
+        width: 20%;
+        position: absolute; 
+        border-radius: 50%;
+        border: 3px solid;
+      }
+
       #container {
         height: 100%;
         display: grid;
@@ -484,6 +504,12 @@ a { /* links */
       #end {
         background-color: darkgray;
         height: 80px;
+      }
+
+      .foto {
+        width: 100px;
+        margin: 10px;
+        border-radius: 10px;
       }
     }
   
